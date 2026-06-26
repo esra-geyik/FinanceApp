@@ -38,7 +38,6 @@ gibi temel yazılım mühendisliği prensiplerini uygulamayı hedefler.
 ---
 
 ## 🗂️ Proje Mimarisi
-
 FinanceApp
 │
 ├── model
