@@ -38,18 +38,20 @@ gibi temel yazılım mühendisliği prensiplerini uygulamayı hedefler.
 ---
 
 ## 🗂️ Proje Mimarisi
+```
 FinanceApp
 │
 ├── model
-│ └── Transaction.java
+│   └── Transaction.java
 │
 ├── service
-│ ├── AuthService.java
-│ ├── TransactionService.java
-│ ├── BudgetService.java
-│ └── AnalysisService.java
+│   ├── AuthService.java
+│   ├── TransactionService.java
+│   ├── BudgetService.java
+│   └── AnalysisService.java
 │
 └── FinanceApp.java
+```
 
 
 ---
