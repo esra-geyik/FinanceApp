@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Service;
 import Repository.FileRepository;
 import model.Transaction;
 
 import java.util.ArrayList;
 import java.util.List;
-/**
- *
- * @author GK
- */
 public class TransactionService {
     private final FileRepository repo = new FileRepository();
     private final List<Transaction> cache = new ArrayList<>();

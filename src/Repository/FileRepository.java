@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Repository;
 import model.Transaction;
 import model.User;
@@ -9,10 +5,6 @@ import model.User;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-/**
- *
- * @author GK
- */
 public class FileRepository {
     private final String USERS_FILE = "users.txt";
     private final String TRANS_FILE = "transactions.txt";
@@ -57,7 +49,7 @@ public class FileRepository {
                 list.add(line);
             }
         } catch (Exception e) {
-            // dosya yoksa ilk çalışmada hata vermesin
+    
         }
         return list;
     }

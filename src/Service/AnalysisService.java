@@ -1,16 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Service;
 import model.Transaction;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
-/**
- *
- * @author GK
- */
 public class AnalysisService {
     private final List<Transaction> list;
 

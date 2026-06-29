@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package financeapp;
 
 import Service.AnalysisService;
@@ -15,10 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- *
- * @author GK
- */
 public class FinanceApp {
 
     private static List<Transaction> getUserTransactions(
@@ -77,10 +69,10 @@ public class FinanceApp {
                     "\n1-Income " +
                     "2-Expense " +
                     "3-Balance " +
-                    "4-Exit " +
-                    "5-Show Transactions " +
-                    "6-Set Budget " +
-                    "7-Report"
+                    "4-Show Transactions " +
+                    "5-Set Budget " +
+                    "6-Report " +
+                    "7-Exit"
             );
 
             int c = sc.nextInt();
@@ -143,7 +135,7 @@ public class FinanceApp {
                     );
                 }
 
-                case 5 -> {
+                case 4 -> {
 
                     for (Transaction t :
                             getUserTransactions(ts, user)) {
@@ -157,7 +149,7 @@ public class FinanceApp {
                     }
                 }
 
-                case 6 -> {
+                case 5 -> {
 
                     System.out.print("Budget Limit: ");
                     double limit = sc.nextDouble();
@@ -167,7 +159,7 @@ public class FinanceApp {
                     System.out.println("Budget set.");
                 }
 
-                case 7 -> {
+                case 6 -> {
 
                     AnalysisService a =
                             new AnalysisService(
@@ -177,7 +169,7 @@ public class FinanceApp {
                     a.report();
                 }
 
-                case 4 -> {
+                case 7 -> {
                     break OUTER;
                 }
 
